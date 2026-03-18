@@ -5,8 +5,8 @@ using namespace std;
 
 
 	int rzutKostka(){	
-	int liczba = rand() % 6 + 1;
-	return liczba;
+	    int liczba = rand() % 6 + 1;
+	    return liczba;
 	}
 	
 	int dodajRzut(int rzuty[], int liczbaRzutow) {
