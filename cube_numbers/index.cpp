@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib> 
-#include <ctime> // Potrzebne do time()
+#include <ctime>
 
 using namespace std;
 
@@ -60,7 +60,7 @@ void najwiekszyRzut(int rzuty[], int liczbaRzutow) {
 }
 
 int main(int argc, char** argv) {
-    srand(time(0)); // Inicjalizacja generatora liczb losowych
+    srand(time(0));
     
     int a, nr_rzutu = 0;
     int rzuty[50];
@@ -83,11 +83,11 @@ int main(int argc, char** argv) {
         } else if(a == 3) {
             sumaOczek(rzuty, nr_rzutu);
         } else if(a == 4) {
-            policzSzostki(rzuty, nr_rzutu); // Naprawione
+            policzSzostki(rzuty, nr_rzutu);
         } else if(a == 5) {
-            najwiekszyRzut(rzuty, nr_rzutu); // Naprawione
+            najwiekszyRzut(rzuty, nr_rzutu);
         } else if(a == 6) {
-            break; // Uzywamy break zamiast return dla lepszej struktury
+            break;
         } else {
             cout << "Niepoprawny wybor!" << endl;
         }
